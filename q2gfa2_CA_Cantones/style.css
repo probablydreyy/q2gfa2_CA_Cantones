@@ -1,0 +1,76 @@
+*{
+    margin:0;
+}
+section{
+    display: flex;
+    align-content: space-between;
+    text-align: center;
+}
+.spacebg{
+    background-image: url(background.jpg);
+    background-size: cover;
+    height:100vh;
+    background-position: center;
+    background-repeat:repeat;
+    width: 100%;
+    overflow: hidden;
+}
+h1{
+    padding-top: 35vh;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+}
+
+.planet{
+    display: inline-block;
+}
+#earth{
+    background-image: url(earth.gif);
+    width: 400px;
+    height: 400px;
+    animation: planet1 15s infinite;
+    background-repeat: no-repeat;
+}
+@keyframes planet1{
+    0% {transform: translate(-200px,-600px);}
+    100%{transform:translate(3400px,100px);}
+    
+}
+#galaxy{
+    background-image: url(galaxy.gif);
+    width: 400px;
+    height: 400px;
+    animation: planet2 30s infinite;
+    background-repeat: no-repeat;
+}
+@keyframes planet2{
+    0% {transform: translate(1200px,200px);}
+    30%{transform:rotate(180deg);}
+    100%{transform:translate(-556px,-200px);}
+}
+#monster{
+    background-image: url(blackmonster.gif);
+    width: 500px;
+    height: 200px;
+    animation: planet3 15s infinite;
+    background-repeat: no-repeat;
+}
+@keyframes planet3{
+    0% {transform: translate(2000px,300px);}
+    50%{transform:rotate(75deg);}
+    100%{transform:translate(-1200px,-600px);}
+}
+#hole{
+    background-image: url(blackhole.gif);
+    width: 200px;
+    height: 200px;
+    animation: planet4 15s infinite;
+    background-repeat: no-repeat;
+}
+@keyframes planet4{
+    0% {transform: translate(-2000px,-500px);}
+    50%{transform: scale(.2);}
+    75%{transform:rotate(60deg);}
+    100%{transform:translate(-800px,-200px);}
+}
